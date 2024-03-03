@@ -1,0 +1,20 @@
+﻿
+
+<div class="text-center">
+   
+    <img width="100%" src="~/zdjecia/zdj2.jpg" />
+    <img width="100%" src="~/zdjecia/img2.webp" />
+    
+</div>
+
+<ul>
+    @foreach (var item in Model)
+{
+    <li>
+        <a asp-controller="home" asp-action="Detail" asp-route-id="@item.Id" >@item.Producer - @item.Model</a>
+        
+        </li>
+
+}
+</ul>
+
